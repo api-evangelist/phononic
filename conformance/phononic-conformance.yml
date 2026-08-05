@@ -1,0 +1,51 @@
+generated: '2026-08-05'
+method: searched
+source: https://phononic.com/predictive-cooling-software-firmware-redfish-compatible/
+note: >-
+  Phononic ships no public OpenAPI, GraphQL SDL or AsyncAPI, so nothing here is
+  derived from a machine-readable contract. The single API-relevant standards
+  claim is made in product marketing for the Thermal Kit / Thermal Fabric
+  control firmware. It is recorded as a vendor claim and explicitly NOT verified
+  - no Redfish service root, schema bundle or conformance report is published on
+  any Phononic host.
+standards:
+- id: dmtf-redfish
+  conforms: unverified
+  claimed: true
+  claim_source: https://phononic.com/predictive-cooling-software-firmware-redfish-compatible/
+  claim_quote: Redfish-compatible open-source interfaces
+  evidence: >-
+    Product page (HTTP 200) states the cooling control firmware exposes
+    "Redfish-compatible open-source interfaces" and is "API-accessible". No
+    Redfish service root was reachable - https://phononic.com/redfish/v1
+    returned 404 and https://api.phononic.com/redfish/v1 returned 403 behind a
+    Cloudflare managed challenge. No DMTF Redfish schema, mockup or conformance
+    test result is published.
+- id: oauth2
+  conforms: false
+  evidence: No OAuth authorization server metadata; /.well-known/oauth-authorization-server returned 404 on phononic.com.
+- id: openid-connect
+  conforms: false
+  evidence: /.well-known/openid-configuration returned 404 on phononic.com.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public API contract to evaluate.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returned 404 on phononic.com.
+- id: llms-txt
+  conforms: true
+  evidence: >-
+    https://phononic.com/llms.txt returned HTTP 200 text/plain (2,285 bytes,
+    Yoast SEO v28.1 generated); saved verbatim to llms/phononic-llms.txt.
+x-evidence:
+- url: https://phononic.com/predictive-cooling-software-firmware-redfish-compatible/
+  status: 200
+- url: https://phononic.com/redfish/v1
+  status: 404
+- url: https://api.phononic.com/redfish/v1
+  status: 403
+- url: https://phononic.com/llms.txt
+  status: 200
+- url: https://phononic.com/.well-known/openid-configuration
+  status: 404
