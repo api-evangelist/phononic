@@ -10,6 +10,17 @@ description: 'Phononic is a Durham, North Carolina solid-state cooling company f
   delivering millisecond thermal response plus real-time telemetry and analytics.
   Phononic publishes no public developer portal, API reference or machine-readable
   specification; technical access runs through sales and customer support.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://phononic.com/wp-content/uploads/cropped-favicon-270x270.png
 url: https://raw.githubusercontent.com/api-evangelist/phononic/refs/heads/main/apis.yml
 x-type: company
