@@ -21,6 +21,18 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://phononic.com/wp-content/uploads/cropped-favicon-270x270.png
 url: https://raw.githubusercontent.com/api-evangelist/phononic/refs/heads/main/apis.yml
 x-type: company
