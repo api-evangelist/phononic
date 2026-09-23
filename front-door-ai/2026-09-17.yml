@@ -1,0 +1,27 @@
+# Front Door AI Index — phononic — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: phononic
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: phononic.com
+  final_host: phononic.com
+  ownership: own
+  owner: phononic
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 20
+  host_score: 20
+  density: 14.04
+  words: 1424
+  tiers:
+    agentic: 0
+    core: 20
+    model: 0
+  ambiguous: 8
+  top_terms:
+    AI: 20
+    intelligence: 7
+    predictive: 1
